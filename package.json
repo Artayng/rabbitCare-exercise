@@ -1,0 +1,16 @@
+{
+  "name": "playwright-excercise",
+  "version": "1.0.0",
+  "description": "Playwright excercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tests:chrome" : "playwright test --config=playwright.config.ts --project=Chromium"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.39.0",
+    "prettier": "^3.0.3"
+  }
+}
