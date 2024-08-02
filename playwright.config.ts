@@ -3,6 +3,8 @@ import { PlaywrightTestConfig } from "@playwright/test";
 const config: PlaywrightTestConfig = {
     timeout : 60000,
     retries: 0,
+    fullyParallel: true,
+    expect: { timeout: 20000 } ,
     use :{
         headless : false,
         viewport : {width : 1280 , height: 720},

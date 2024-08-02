@@ -4,13 +4,16 @@
   "description": "Playwright excercise",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tests:chrome" : "playwright test --config=playwright.config.ts --project=Chromium"
+    "tests:chrome": "playwright test tests/rabbit.spec.ts  --project=Chromium"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@playwright/test": "^1.39.0",
+    "nvm": "^0.0.4",
     "prettier": "^3.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10"
   }
 }
